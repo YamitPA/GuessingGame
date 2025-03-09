@@ -45,4 +45,25 @@ The task was to create a game following these requirements:
 6. Upon winning, the total number of guesses is displayed, and you're asked if you want to play again (enter `1` for yes, `0` for no).
 
 ## Installation and Running
-1. Clone this repository:
+1. Clone this repository:(Replace `username` with your GitHub username.)
+2. Open the project in an IDE like Eclipse.
+3. Ensure you have JDK 8 or higher installed.
+4. Run the `GuessingGame` class to start the game.
+
+## Code Highlights
+- **Target Number Generation**: Uses `Random` to create a 4-digit number and `HashSet` to ensure unique digits.
+- **Guess Validation**: Checks length, numeric characters, and uniqueness using `String` methods.
+- **Feedback Logic**: Compares each digit of the guess to the target, counting Bulls and Hits efficiently.
+- **History Tracking**: Stores previous guesses in an `ArrayList` for display.
+
+## Example Gameplay
+Target: 1307 (hidden from user)
+Guess 1: 1234 -> Bulls: 1, Hits: 1
+Guess 2: 5678 -> Bulls: 0, Hits: 0
+Guess 3: 3201 -> Bulls: 1, Hits: 2
+Guess 4: 1307 -> Bulls: 4, Hits: 0
+Result: "Congratulations! You guessed the right number in 4 guesses!"
+
+## Development Environment
+- Written in Java using Eclipse IDE.
+- Uses standard Java libraries (`java.util.Random`, `java.util.HashSet`, `javax.swing.JOptionPane`, etc.).
